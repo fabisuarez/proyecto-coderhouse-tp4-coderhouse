@@ -1,3 +1,128 @@
+@import "variables";
+.line-roja{
+    border-bottom: 1px solid $rojo;
+  display: block;
+  width: 35px;
+  margin: 20px auto;
+}
+.line-blanco{
+    border-bottom: 1px solid $blanco;
+  display: block;
+  width: 35px;
+  margin: 20px auto;
+}
 body{
-    color: red;
+  font-family: $font-family-oswald;
+}
+header{
+    width: 100%;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    margin-top: -72px;
+    .container{
+      padding-top: 65px;
+    }
+    .Bienvenida{
+      padding: 265px 0;
+      h1{
+          color: $blanco;
+          text-transform: uppercase;
+          font-size: 64px;
+          letter-spacing: 5px;
+      }
+      .btn-primary {
+        color: $blanco;
+        background-color: $rojo;
+        border: none;
+        border-radius: 20px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover{
+          background-color: $gris;
+        }
+      }
+    }
+}
+
+//////// CUSTOM BOOTSTRAP /////////////
+
+.navbar{
+    border-radius: 0px;
+}
+.navbar-default{
+  background-color: rgba(0,0,0,0.08);
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid $blanco-alpha;
+}
+.navbar-default .navbar-nav>li>a{
+  color: $gris;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color: $rojo;
+}
+
+.navbar-default .navbar-brand{
+  color: $gris;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-brand:hover{
+  color: $rojo;
+
+}
+.Aprender-Mas{
+    background: $rojo;
+  .container{
+    padding: 70px 200px;
+    h2{
+      color: $blanco;
+    }
+    p{
+      color: $blanco;
+      font-style: lighter;
+      font-weight: 300;
+    }
+    botton{
+        color: $negro;
+    background-color: $blanco;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+      }
+  }
+}
+
+.Nuestros-Servicios{
+    background: $blanco;
+  .container{
+    padding: 70px 0;
+    span{
+      color: $rojo;
+      font-size: 40px;
+    }
+    h3{
+      color: $negro;
+    }
+    p{
+      color: $negro;
+      font-style: lighter;
+      font-weight: 300;
+    }
+  }
+}
+
+.Portfolio{
+  overflow: hidden;
+  div{
+    padding: 0px;
+    img{
+  max-width: 650px;
+  width: 100%;
+  }
+  }
+
 }

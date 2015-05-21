@@ -1,4 +1,105 @@
+.line-roja {
+  border-bottom: 1px solid #f05f40;
+  display: block;
+  width: 35px;
+  margin: 20px auto; }
+
+.line-blanco {
+  border-bottom: 1px solid #fff;
+  display: block;
+  width: 35px;
+  margin: 20px auto; }
+
 body {
-  color: red; }
+  font-family: "Oswald", sans-serif; }
+
+header {
+  width: 100%;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  margin-top: -72px; }
+  header .container {
+    padding-top: 65px; }
+  header .Bienvenida {
+    padding: 265px 0; }
+    header .Bienvenida h1 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 64px;
+      letter-spacing: 5px; }
+    header .Bienvenida .btn-primary {
+      color: #fff;
+      background-color: #f05f40;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 20px;
+      text-transform: uppercase;
+      font-weight: bold; }
+      header .Bienvenida .btn-primary:hover {
+        background-color: #cfc7c6; }
+
+.navbar {
+  border-radius: 0px; }
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+
+.navbar-default .navbar-nav > li > a {
+  color: #cfc7c6;
+  text-transform: uppercase; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #f05f40; }
+
+.navbar-default .navbar-brand {
+  color: #cfc7c6;
+  text-transform: uppercase; }
+
+.navbar-default .navbar-brand:hover {
+  color: #f05f40; }
+
+.Aprender-Mas {
+  background: #f05f40; }
+  .Aprender-Mas .container {
+    padding: 70px 200px; }
+    .Aprender-Mas .container h2 {
+      color: #fff; }
+    .Aprender-Mas .container p {
+      color: #fff;
+      font-style: lighter;
+      font-weight: 300; }
+    .Aprender-Mas .container botton {
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 20px;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+.Nuestros-Servicios {
+  background: #fff; }
+  .Nuestros-Servicios .container {
+    padding: 70px 0; }
+    .Nuestros-Servicios .container span {
+      color: #f05f40;
+      font-size: 40px; }
+    .Nuestros-Servicios .container h3 {
+      color: #000; }
+    .Nuestros-Servicios .container p {
+      color: #000;
+      font-style: lighter;
+      font-weight: 300; }
+
+.Portfolio {
+  overflow: hidden; }
+  .Portfolio div {
+    padding: 0px; }
+    .Portfolio div img {
+      max-width: 650px;
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
