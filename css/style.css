@@ -1,17 +1,5 @@
-.line-roja {
-  border-bottom: 1px solid #f05f40;
-  display: block;
-  width: 35px;
-  margin: 20px auto; }
-
-.line-blanco {
-  border-bottom: 1px solid #fff;
-  display: block;
-  width: 35px;
-  margin: 20px auto; }
-
 body {
-  font-family: "Oswald", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 header {
   width: 100%;
@@ -25,8 +13,8 @@ header {
     header .Bienvenida h1 {
       color: #fff;
       text-transform: uppercase;
-      font-size: 64px;
-      letter-spacing: 5px; }
+      font-size: 60px;
+      font-weight: 700; }
     header .Bienvenida .btn-primary {
       color: #fff;
       background-color: #f05f40;
@@ -37,6 +25,27 @@ header {
       font-weight: bold; }
       header .Bienvenida .btn-primary:hover {
         background-color: #cfc7c6; }
+
+.line-roja {
+  border-bottom: 2px solid #f05f40;
+  display: block;
+  width: 50px;
+  margin: 20px auto; }
+
+.line-blanco {
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 50px;
+  margin: 20px auto; }
+
+.btn-blanco-radius {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .navbar {
   border-radius: 0px; }
@@ -49,16 +58,24 @@ header {
 
 .navbar-default .navbar-nav > li > a {
   color: #cfc7c6;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #f05f40; }
 
 .navbar-default .navbar-brand {
   color: #cfc7c6;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #f05f40; }
 
 .navbar-default .navbar-brand:hover {
+  color: #f05f40; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #f05f40; }
 
 .Aprender-Mas {
@@ -71,25 +88,17 @@ header {
       color: #fff;
       font-style: lighter;
       font-weight: 300; }
-    .Aprender-Mas .container botton {
-      color: #000;
-      background-color: #fff;
-      border: none;
-      border-radius: 20px;
-      padding: 5px 20px;
-      text-transform: uppercase;
-      font-weight: bold; }
 
 .Nuestros-Servicios {
   background: #fff; }
   .Nuestros-Servicios .container {
     padding: 70px 0; }
-    .Nuestros-Servicios .container span {
+    .Nuestros-Servicios .container .List-Servicios span {
       color: #f05f40;
       font-size: 40px; }
-    .Nuestros-Servicios .container h3 {
+    .Nuestros-Servicios .container .List-Servicios h3 {
       color: #000; }
-    .Nuestros-Servicios .container p {
+    .Nuestros-Servicios .container .List-Servicios p {
       color: #000;
       font-style: lighter;
       font-weight: 300; }
@@ -101,5 +110,68 @@ header {
     .Portfolio div img {
       max-width: 650px;
       width: 100%; }
+
+.Sumate {
+  background: #222222; }
+  .Sumate .container {
+    padding: 70px 0; }
+    .Sumate .container h3 {
+      color: #fff; }
+    .Sumate .container p {
+      color: #fff;
+      font-style: lighter;
+      font-weight: 300; }
+
+.Contacto {
+  background: #fff; }
+  .Contacto .container {
+    padding: 70px 200px; }
+    .Contacto .container h2 {
+      color: #222222; }
+    .Contacto .container p {
+      color: #222222;
+      font-style: lighter;
+      font-weight: 300; }
+    .Contacto .container .Datos span {
+      color: #222222;
+      font-size: 30px;
+      display: block;
+      margin: 10px 0; }
+    .Contacto .container .Datos .Datos-Box {
+      margin: 15px 0; }
+      .Contacto .container .Datos .Datos-Box .Datos-Tel {
+        color: #222222; }
+      .Contacto .container .Datos .Datos-Box .Datos-Email {
+        color: #f05f40; }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .Aprender-Mas .container {
+    padding: 70px 35px; }
+
+  .Nuestros-Servicios .container {
+    padding: 70px 130px; }
+
+  .List-Servicios {
+    margin-top: 20px; }
+
+  .Contacto .container {
+    padding: 70px 35px; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  .Aprender-Mas .container {
+    padding: 70px 20px; }
+
+  .List-Servicios {
+    margin-top: 20px; }
+
+  header .Bienvenida {
+    padding: 50px 0px 85px 0; }
+    header .Bienvenida h1 {
+      font-size: 45px; }
+
+  .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    background: #fff; }
+
+  .Contacto .container {
+    padding: 70px 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,5 @@
 @import "variables";
-.line-roja{
-    border-bottom: 1px solid $rojo;
-  display: block;
-  width: 35px;
-  margin: 20px auto;
-}
-.line-blanco{
-    border-bottom: 1px solid $blanco;
-  display: block;
-  width: 35px;
-  margin: 20px auto;
-}
+
 body{
   font-family: $font-family-oswald;
 }
@@ -25,10 +14,10 @@ header{
     .Bienvenida{
       padding: 265px 0;
       h1{
-          color: $blanco;
-          text-transform: uppercase;
-          font-size: 64px;
-          letter-spacing: 5px;
+        color: $blanco;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 700;
       }
       .btn-primary {
         color: $blanco;
@@ -45,6 +34,28 @@ header{
     }
 }
 
+.line-roja{
+  border-bottom: 2px solid $rojo;
+  display: block;
+  width: 50px;
+  margin: 20px auto;
+}
+.line-blanco{
+  border-bottom: 2px solid $blanco;
+  display: block;
+  width: 50px;
+  margin: 20px auto;
+}
+.btn-blanco-radius{
+  color: $negro;
+  background-color: $blanco;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 //////// CUSTOM BOOTSTRAP /////////////
 
 .navbar{
@@ -59,6 +70,7 @@ header{
 .navbar-default .navbar-nav>li>a{
   color: $gris;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .navbar-default .navbar-nav>li>a:hover{
   color: $rojo;
@@ -67,11 +79,18 @@ header{
 .navbar-default .navbar-brand{
   color: $gris;
   text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+  color: $rojo;
 }
 .navbar-default .navbar-brand:hover{
   color: $rojo;
-
 }
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: $rojo;
+}
+
 .Aprender-Mas{
     background: $rojo;
   .container{
@@ -84,15 +103,6 @@ header{
       font-style: lighter;
       font-weight: 300;
     }
-    botton{
-        color: $negro;
-    background-color: $blanco;
-    border: none;
-    border-radius: 20px;
-    padding: 5px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-      }
   }
 }
 
@@ -100,17 +110,19 @@ header{
     background: $blanco;
   .container{
     padding: 70px 0;
-    span{
-      color: $rojo;
-      font-size: 40px;
-    }
-    h3{
-      color: $negro;
-    }
-    p{
-      color: $negro;
-      font-style: lighter;
-      font-weight: 300;
+    .List-Servicios{
+      span{
+        color: $rojo;
+        font-size: 40px;
+      }
+      h3{
+        color: $negro;
+      }
+      p{
+        color: $negro;
+        font-style: lighter;
+        font-weight: 300;
+      }
     }
   }
 }
@@ -126,3 +138,51 @@ header{
   }
 
 }
+
+.Sumate{
+    background: $gris-oscuro;
+  .container{
+    padding: 70px 0;
+    h3{
+      color: $blanco;
+    }
+    p{
+      color: $blanco;
+      font-style: lighter;
+      font-weight: 300;
+    }
+  }
+}
+
+.Contacto{
+    background: $blanco;
+  .container{
+    padding: 70px 200px;
+    h2{
+      color: $gris-oscuro;
+    }
+    p{
+      color: $gris-oscuro;
+      font-style: lighter;
+      font-weight: 300;
+    }
+    .Datos{
+      span{
+        color: $gris-oscuro;
+        font-size: 30px;
+        display: block;
+        margin: 10px 0;
+      }
+      .Datos-Box{
+        margin: 15px 0;
+        .Datos-Tel{
+          color: $gris-oscuro;
+        }
+        .Datos-Email{
+          color: $rojo;
+        }
+      }
+    }
+  }
+}
+@import "responsive";

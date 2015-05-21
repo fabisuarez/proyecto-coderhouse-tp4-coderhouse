@@ -1,0 +1,35 @@
+@media (min-width: 768px) and (max-width: 1200px){
+    .Aprender-Mas .container {
+      padding: 70px 35px;
+    }
+    .Nuestros-Servicios .container {
+      padding: 70px 130px;
+    }
+    .List-Servicios{
+        margin-top: 20px;
+    }
+    .Contacto .container {
+      padding: 70px 35px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .Aprender-Mas .container {
+        padding: 70px 20px;
+    }
+    .List-Servicios{
+        margin-top: 20px;
+    }
+    header .Bienvenida {
+            padding: 50px 0px 85px 0;
+          h1 {
+            font-size: 45px;
+        }
+    }
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        background: $blanco;
+    }
+    .Contacto .container {
+      padding: 70px 20px;
+    }
+}

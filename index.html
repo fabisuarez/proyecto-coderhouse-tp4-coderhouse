@@ -15,13 +15,13 @@
 
     <!-- Google Fonts   Oswald -->
 
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- CDN JQuery -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <!-- CDN JavaScript Boostrap -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -41,11 +41,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#services">Services</a></li>
+            <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>
           </ul>
+          <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1500);
+                });
+            });
+        </script>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -60,73 +68,106 @@
             </div>
         </div>
     </header>
-    <section class="Aprender-Mas">
+    <section id="about" class="Aprender-Mas">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>¡Tenemos lo que necesitas!</h2>
                     <span class="line-blanco"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
-                    <botton class="btn btn-primary border-radius-large">Aprender más</botton>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
+                    <botton class="btn btn-primary border-radius-large btn-blanco-radius">Aprender más</botton>
                 </div>
             </div>
         </div>
     </section>
-    <section class="Nuestros-Servicios">
+    <section id="services" class="Nuestros-Servicios">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Nuestros Servicios</h2>
-                        <span class="line-roja"></span>
-                    <div class="col-lg-3">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <h3>Enseñanza Personalizada</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <span class="glyphicon glyphicon-send"></span>
-                        <h3>Listo para trabajar</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <span class="glyphicon glyphicon-list-alt"></span>
-                        <h3>Las últimas tecnologías</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <h3>Pasión por lo que hacemos</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
+                    <span class="line-roja"></span>
+                    <div class="row">
+                        <div class="col-lg-12 List-Servicios">
+                            <div class="col-lg-3">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <h3>Enseñanza Personalizada</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium.</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <span class="glyphicon glyphicon-send"></span>
+                                <h3>Listo para trabajar</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium.</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <h3>Las últimas tecnologías</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium.</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <span class="glyphicon glyphicon-heart"></span>
+                                <h3>Pasión por lo que hacemos</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="Portfolio">
+    <section id="portfolio" class="Portfolio">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/portfolio/1.jpg" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/portfolio/2.jpg" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/portfolio/3.jpg" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/portfolio/4.jpg" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/portfolio/5.jpg" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/portfolio/6.jpg" alt="">
                     </div>
                 </div>
             </div>
     </section>
-
-
+    <section class="Sumate">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Súmate y convértite en desarrollador en sólo 10 semanas</h3>
+                    <botton class="btn btn-primary border-radius-large btn-blanco-radius">Suscribirme</botton>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="Contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contacto</h2>
+                    <span class="line-roja"></span>
+                    <p>Nos interesa estár en contacto, ante cualquier consulta estamos a tu disposición</p>
+                    <div class="row Datos">
+                        <div class="col-lg-6 text-center Datos-Box">
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            <a class="Datos-Tel" href="">123-456-6789</a>
+                        </div>
+                        <div class="col-lg-6 text-center Datos-Box">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <a class="Datos-Email" href="mailto:hola@coderhouse.com">hola@coderhouse.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
